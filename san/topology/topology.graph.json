@@ -114,7 +114,7 @@
       ],
       "measuredSurface": {
         "file_count": 27,
-        "total_bytes": 172393,
+        "total_bytes": 172260,
         "sample_paths": [
           ".gitignore",
           "AGENT_GUIDE.md",
@@ -620,7 +620,7 @@
       ],
       "measuredSurface": {
         "file_count": 27,
-        "total_bytes": 238833,
+        "total_bytes": 240167,
         "sample_paths": [
           "pyproject.toml",
           "scripts/__init__.py",
@@ -726,7 +726,7 @@
   "integrity": {
     "declaredObservedDriftScore": 0.0,
     "cyclesPresent": false,
-    "lastTopologyReview": "2026-03-30T16:15:19Z",
-    "lastSanlockReview": "2026-03-30T16:15:19Z"
+    "lastTopologyReview": "2026-03-30",
+    "lastSanlockReview": "2026-03-30"
   }
 }

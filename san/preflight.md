@@ -17,8 +17,9 @@
 | Item | Value |
 | --- | --- |
 | vcs | git |
-| head commit | 8c8da1db3d5319ea2566a147af727c06e74313e5 |
-| dirty paths | 10 |
+| head ref | HEAD |
+| history present | True |
+| dirty paths | 7 |
 | drift score | 0.0 |
 
 ## Execution Entrypoints
@@ -60,7 +61,7 @@
 ## Under-Specification
 
 - Remote-forge and PR workflow are not yet codified.
-- Baseline SAN checkpoint remains pending until git commit exists.
+- Remote collaboration policy is still unset beyond local git.
 
 ## Current SAN Score Summary
 

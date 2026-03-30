@@ -3,6 +3,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+from scripts.san_preflight import build_report
 from scripts.san_verify import build_command_plan
 
 
@@ -97,3 +98,27 @@ def test_san_verify_uses_windows_safe_npm_invocation() -> None:
     assert any(command[0].lower().endswith("npm.cmd") for command in npm_commands)
     assert any(command[-1] == "test" for command in npm_commands)
     assert all("--runInBand" not in command for command in npm_commands)
+
+
+def test_preflight_tracks_live_git_baseline_state() -> None:
+    report = build_report({
+        "control": json.loads((REPO_ROOT / "san" / "control_plane.json").read_text(encoding="utf-8")),
+        "runtime": json.loads((REPO_ROOT / "san" / "runtime_manifest.json").read_text(encoding="utf-8")),
+        "graph": json.loads((REPO_ROOT / "san" / "topology" / "topology.graph.json").read_text(encoding="utf-8")),
+        "scorecard": json.loads((REPO_ROOT / "san" / "sanlock_scorecard.json").read_text(encoding="utf-8")),
+    })
+
+    head_commit = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "rev-parse", "HEAD"],
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout.strip()
+
+    assert head_commit
+    assert report["versioned_change_surface"]["head_ref"] == "HEAD"
+    assert report["versioned_change_surface"]["history_present"] is True
+    assert not any(
+        "pending until git commit exists" in item.lower()
+        for item in report["signs_of_under_specification"]
+    )

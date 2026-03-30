@@ -26,7 +26,8 @@ def build_report(bundle: dict) -> dict:
         "competing_authority_surfaces": [],
         "versioned_change_surface": {
             "vcs": "git",
-            "head_commit": head_commit,
+            "head_ref": "HEAD" if head_commit else None,
+            "history_present": bool(head_commit),
             "dirty_paths": dirty_lines
         },
         "execution_entrypoints": runtime_manifest["execution_entrypoints"],
@@ -52,7 +53,11 @@ def build_report(bundle: dict) -> dict:
         "signs_of_over_constraint": [],
         "signs_of_under_specification": [
             "Remote-forge and PR workflow are not yet codified.",
-            "Baseline SAN checkpoint remains pending until git commit exists."
+            (
+                "Baseline SAN checkpoint remains pending until git commit exists."
+                if not head_commit
+                else "Remote collaboration policy is still unset beyond local git."
+            )
         ],
         "current_san_score_summary": scorecard["summary"] if scorecard else "Pending first SANLOCK run."
     }
@@ -61,7 +66,8 @@ def build_report(bundle: dict) -> dict:
 def render_report_md(report: dict) -> str:
     change_rows = [
         ["vcs", report["versioned_change_surface"]["vcs"]],
-        ["head commit", str(report["versioned_change_surface"]["head_commit"])],
+        ["head ref", str(report["versioned_change_surface"]["head_ref"])],
+        ["history present", str(report["versioned_change_surface"]["history_present"])],
         ["dirty paths", str(len(report["versioned_change_surface"]["dirty_paths"]))],
         ["drift score", str(report["declared_observed_drift_score"])],
     ]
