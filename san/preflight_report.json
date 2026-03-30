@@ -15,12 +15,7 @@
     "history_present": true,
     "dirty_paths": [
       "M san/preflight.md",
-      " M san/preflight_report.json",
-      " M san/sanlock_scorecard.json",
-      " M san/topology/topology.graph.json",
-      " M scripts/san_preflight.py",
-      " M scripts/san_shared.py",
-      " M tests/test_san_repo_os.py"
+      " M san/preflight_report.json"
     ]
   },
   "execution_entrypoints": {

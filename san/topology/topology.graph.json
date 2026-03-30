@@ -114,7 +114,7 @@
       ],
       "measuredSurface": {
         "file_count": 27,
-        "total_bytes": 172260,
+        "total_bytes": 172062,
         "sample_paths": [
           ".gitignore",
           "AGENT_GUIDE.md",

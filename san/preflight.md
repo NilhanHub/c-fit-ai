@@ -19,7 +19,7 @@
 | vcs | git |
 | head ref | HEAD |
 | history present | True |
-| dirty paths | 7 |
+| dirty paths | 2 |
 | drift score | 0.0 |
 
 ## Execution Entrypoints
