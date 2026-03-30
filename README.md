@@ -18,8 +18,8 @@ This repository is a machine-readable dual-node workspace for Colombo product wo
 ## Current State
 
 - active focus: Install a canonical SAN control plane around both existing product lines.
-- SAN score: 3.85/5
-- SAN summary: SAN maturity averages 3.85/5 across the current minimum scorecard.
+- SAN score: 4.00/5
+- SAN summary: SAN maturity averages 4.00/5 across the current minimum scorecard.
 
 ## Not Built Yet
 

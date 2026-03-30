@@ -37,6 +37,12 @@
       "type": "FACT",
       "statement": "The canonical web test command is `npm --prefix apps/web test`, not a Jest-style `--runInBand` variant.",
       "why": "The repo uses Vitest, and live verification showed the Jest flag is invalid in this web node."
+    },
+    {
+      "date": "2026-03-30",
+      "type": "FACT",
+      "statement": "Git baseline commit `8c8da1db3d5319ea2566a147af727c06e74313e5` established the first SAN-aligned checkpoint on `main`.",
+      "why": "Versioned change stewardship is a constitutional SAN requirement, and the repo previously had no commit history."
     }
   ],
   "unresolved": [
@@ -56,9 +62,9 @@
     "Do not hand-edit generated mirrors when san_sync owns them."
   ],
   "baseline_checkpoint": {
-    "status": "pending_git_commit",
+    "status": "recorded_git_commit",
     "policy": "The first commit on main containing the SAN control-plane files is the initial SAN-aligned checkpoint.",
-    "recorded_commit": null
+    "recorded_commit": "8c8da1db3d5319ea2566a147af727c06e74313e5"
   },
   "recurring_failures": [
     {

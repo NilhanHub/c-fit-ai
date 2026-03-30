@@ -19,3 +19,8 @@
 
 - `FACT`: The canonical web test command is `npm --prefix apps/web test`, not a Jest-style `--runInBand` variant.
 - why: The repo uses Vitest, and live verification showed the Jest flag is invalid in this web node.
+
+## 2026-03-30
+
+- `FACT`: Git baseline commit `8c8da1db3d5319ea2566a147af727c06e74313e5` established the first SAN-aligned checkpoint on `main`.
+- why: Versioned change stewardship is a constitutional SAN requirement, and the repo previously had no commit history.

@@ -27,6 +27,7 @@
 - `FACT` 2026-03-30: Canonical repo-OS truth now lives in SAN JSON manifests, not prompt-era docs. Why: The blueprint requires singular control-plane authority.
 - `INFERENCE` 2026-03-30: Generated repo mirrors are acceptable as long as they remain subordinate to the canonical SAN manifests. Why: Equivalent manifestations are allowed when authority stays singular.
 - `FACT` 2026-03-30: The canonical web test command is `npm --prefix apps/web test`, not a Jest-style `--runInBand` variant. Why: The repo uses Vitest, and live verification showed the Jest flag is invalid in this web node.
+- `FACT` 2026-03-30: Git baseline commit `8c8da1db3d5319ea2566a147af727c06e74313e5` established the first SAN-aligned checkpoint on `main`. Why: Versioned change stewardship is a constitutional SAN requirement, and the repo previously had no commit history.
 
 ## Unresolved
 
@@ -42,6 +43,6 @@
 
 ## Baseline Checkpoint
 
-- status: `pending_git_commit`
+- status: `recorded_git_commit`
 - policy: The first commit on main containing the SAN control-plane files is the initial SAN-aligned checkpoint.
-- recorded commit: `None`
+- recorded commit: `8c8da1db3d5319ea2566a147af727c06e74313e5`

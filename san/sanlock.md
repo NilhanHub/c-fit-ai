@@ -5,7 +5,7 @@
 | Category | Score | Evidence |
 | --- | --- | --- |
 | control_plane_authority | 4 | AGENTS.md plus canonical SAN manifests exist. |
-| versioned_change_stewardship | 2 | Local git exists and a baseline commit is required for full strength. |
+| versioned_change_stewardship | 4 | Local git exists and a baseline commit is required for full strength. |
 | durable_state_freshness | 4 | Durable state last updated 2026-03-30. |
 | resume_handoff_quality | 4 | Resume instructions, decisions, and baseline policy are present. |
 | verification_integrity | 4 | Runtime manifest and SAN verification scripts are defined. |
@@ -20,7 +20,7 @@
 
 ## Summary
 
-- SAN maturity averages 3.85/5 across the current minimum scorecard.
+- SAN maturity averages 4.00/5 across the current minimum scorecard.
 
 ## Hotspots
 
@@ -53,7 +53,7 @@
 ## Under-Specification Findings
 
 - Remote-forge policy remains unset.
-- Baseline commit is still pending until git history exists.
+- Baseline commit exists, but remote collaboration policy is still unset.
 
 ## Recommended Actions
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T16:14:00Z",
+  "generated_at": "2026-03-30T16:15:19Z",
   "blueprint_edition": "3.7",
   "scores": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "category": "versioned_change_stewardship",
-      "score": 2,
+      "score": 4,
       "evidence": "Local git exists and a baseline commit is required for full strength."
     },
     {
@@ -68,7 +68,7 @@
       "evidence": "Outward sharing is inactive and private-by-default classes are declared."
     }
   ],
-  "summary": "SAN maturity averages 3.85/5 across the current minimum scorecard.",
+  "summary": "SAN maturity averages 4.00/5 across the current minimum scorecard.",
   "findings": {
     "hotspots": [
       {
@@ -134,7 +134,7 @@
     "over_constraint_findings": [],
     "under_specification_findings": [
       "Remote-forge policy remains unset.",
-      "Baseline commit is still pending until git history exists."
+      "Baseline commit exists, but remote collaboration policy is still unset."
     ],
     "recommended_actions": [
       "Keep prompt-era artifacts historical and out of the control plane.",
