@@ -1,0 +1,35 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Alert
+type: object
+additionalProperties: false
+required:
+  - alert_id
+  - seeker_id
+  - alert_type
+  - urgency
+  - channel
+  - created_at
+properties:
+  alert_id:
+    type: string
+  seeker_id:
+    type: string
+  alert_type:
+    type: string
+    enum: [fresh_job, urgent_story, walk_in, application_status, digest]
+  urgency:
+    type: string
+    enum: [low, medium, high]
+  channel:
+    type: string
+    enum: [push, email, whatsapp]
+  related_job_id:
+    type: string
+  related_story_id:
+    type: string
+  created_at:
+    type: string
+    format: date-time
+  opened_at:
+    type: string
+    format: date-time

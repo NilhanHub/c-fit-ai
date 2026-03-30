@@ -1,0 +1,7 @@
+metric,value,unit,claim_type,evidence_refs,notes
+establishments_total,135998,establishments,FACT,dcs-non-agri-colombo-establishments,Colombo non-agricultural establishments from DCS snippet
+persons_engaged_total,700638,people,FACT,dcs-non-agri-colombo-establishments,Persons engaged in Colombo establishments from DCS snippet
+micro_share,0.850,share,FACT,dcs-non-agri-colombo-establishments,Micro establishment share from DCS snippet
+small_share,0.117,share,FACT,dcs-non-agri-colombo-establishments,Small establishment share from DCS snippet
+medium_share,0.025,share,FACT,dcs-non-agri-colombo-establishments,Medium establishment share from DCS snippet
+retail_trade_share,0.580,share,FACT,dcs-trade-bulletin-colombo-retail-share,Retail trade share anchor from DCS trade bulletin snippet

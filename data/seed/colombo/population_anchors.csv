@@ -1,0 +1,6 @@
+metric,value,unit,claim_type,evidence_refs,notes
+population_total,2374461,people,FACT,dcs-census-2024-colombo-population,Colombo District population from DCS 2024 census release snippet
+households_total,654051,households,FACT,dcs-census-2024-colombo-households,Colombo District household count from DCS 2024 census release snippet
+avg_household_size,3.5,persons_per_household,FACT,dcs-census-2024-colombo-households,Average household size from DCS 2024 census release snippet
+population_density_per_sqkm,3877,persons_per_sqkm,FACT,dcs-census-2024-colombo-population,District density from DCS 2024 census release snippet
+hies_avg_income_lkr_monthly,104400,lkr_per_month,FACT,dcs-hies-2019,Average monthly household income in Colombo District in HIES 2019

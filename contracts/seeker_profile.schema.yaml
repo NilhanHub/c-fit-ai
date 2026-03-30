@@ -1,0 +1,55 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Seeker Profile
+type: object
+additionalProperties: false
+required:
+  - seeker_id
+  - display_name
+  - language
+  - role_interests
+  - preferred_locations
+  - experience_level
+  - alert_preferences
+properties:
+  seeker_id:
+    type: string
+  display_name:
+    type: string
+  language:
+    type: string
+    enum: [en, si]
+  age_band:
+    type: string
+  role_interests:
+    type: array
+    minItems: 1
+    items:
+      type: string
+  preferred_locations:
+    type: array
+    items:
+      type: string
+  experience_level:
+    type: string
+    enum: [student, fresh, junior, entry_level]
+  education:
+    type: string
+  salary_floor_lkr:
+    type: integer
+    minimum: 0
+  has_cv:
+    type: boolean
+  intro_story_ids:
+    type: array
+    items:
+      type: string
+  alert_preferences:
+    type: object
+    additionalProperties: false
+    required: [push, digest]
+    properties:
+      push:
+        type: boolean
+      digest:
+        type: string
+        enum: [off, daily, twice_daily]

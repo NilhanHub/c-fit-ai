@@ -1,0 +1,5 @@
+# Prompt #05 Morning Brief
+
+Prompt #05 turned Jobs Pulse from a polished MVP shell into a much stronger jobs operating surface. The rebuilt app now leads with visible movement, not explanation: a delta summary, a Move Now queue, a real urgent story reel, sharper ranked jobs, stronger trust integration, and a true three-zone desktop composition. The strongest product decision was to deepen the existing wedge rather than pivot it. "Since your last visit" is now the system that ties together jobs, stories, trust shifts, alerts, and employer activity.
+
+The biggest design correction was structural, not cosmetic. The prior version looked composed but hid weak urgency and underused desktop space. The new version uses the same warm visual family but gives urgency, salary, trust, and risk clearer roles. Mobile now keeps the core feed primary. Desktop now feels intentionally arranged. The implementation is real in `apps/web`, while backend, notifications, persistence, and moderation remain honestly mocked.

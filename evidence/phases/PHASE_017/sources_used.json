@@ -1,0 +1,11 @@
+{
+  "phase": 17,
+  "catalog_path": "evidence\\source_catalog.json",
+  "source_ids": [
+    "dcs-cph-2024-main-page",
+    "dcs-cph-2024-population-prelim",
+    "dcs-cph-2024-housing-prelim",
+    "dcs-cph-2024-basic-population-ds",
+    "dcs-cph-2024-gn-population"
+  ]
+}

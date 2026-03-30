@@ -1,0 +1,32 @@
+{
+  "prompt_id": "PROMPT#01",
+  "app_name": "Score_Leads",
+  "repo_root": "D:\\AI\\C_fit_AI",
+  "zip_target": "D:\\AI-Apps-In-Drive\\App_Station\\Score_Leads\\Evidence\\PROMPT#01.zip",
+  "status": "foundation_packaged",
+  "artifact_roots": [
+    "README.md",
+    "AGENT_GUIDE.md",
+    "MARKET_MODEL_SPEC.md",
+    "RESEARCH_METHODOLOGY.md",
+    "SCORING_FRAMEWORK.md",
+    "POPULATION_MODEL_PLAN.md",
+    "FIRM_MODEL_PLAN.md",
+    "OFFER_DISCOVERY_PLAN.md",
+    "EXPERIMENT_PLAN.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "EVIDENCE_INDEX.md",
+    "contracts",
+    "population",
+    "firms",
+    "offers",
+    "scoring",
+    "experiments",
+    "validation",
+    "scripts",
+    "tests"
+  ],
+  "source_catalog_path": "evidence/source_catalog.json",
+  "claim_labels": ["FACT", "INFERENCE", "TBD"]
+}

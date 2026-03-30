@@ -1,0 +1,87 @@
+COMMAND: uv sync --all-groups --frozen
+Audited 22 packages in 0.63ms
+
+COMMAND: uv run pytest -q
+.............                                                            [100%]
+13 passed in 0.08s
+
+COMMAND: git status --short --branch
+## No commits yet on main
+?? .gitignore
+?? AGENT_GUIDE.md
+?? CHANGELOG.md
+?? EVIDENCE_INDEX.md
+?? EXPERIMENT_PLAN.md
+?? FIRM_MODEL_PLAN.md
+?? MARKET_MODEL_SPEC.md
+?? OFFER_DISCOVERY_PLAN.md
+?? POPULATION_MODEL_PLAN.md
+?? README.md
+?? RESEARCH_METHODOLOGY.md
+?? SCORING_FRAMEWORK.md
+?? TODO.md
+?? contracts/
+?? evidence/
+?? experiments/
+?? firms/
+?? offers/
+?? population/
+?? pyproject.toml
+?? scoring/
+?? scripts/
+?? simulation/
+?? tests/
+?? uv.lock
+?? validation/
+
+COMMAND: uv run python scripts/package_prompt01_evidence.py (final)
+{
+  "zip_target": "D:\\AI-Apps-In-Drive\\App_Station\\Score_Leads\\Evidence\\PROMPT#01.zip",
+  "file_count": 43,
+  "files": [
+    "README.md",
+    "AGENT_GUIDE.md",
+    "MARKET_MODEL_SPEC.md",
+    "RESEARCH_METHODOLOGY.md",
+    "SCORING_FRAMEWORK.md",
+    "POPULATION_MODEL_PLAN.md",
+    "FIRM_MODEL_PLAN.md",
+    "OFFER_DISCOVERY_PLAN.md",
+    "EXPERIMENT_PLAN.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "EVIDENCE_INDEX.md",
+    "pyproject.toml",
+    "contracts\\buying_center.schema.yaml",
+    "contracts\\experiment.schema.yaml",
+    "contracts\\firm_entity.schema.yaml",
+    "contracts\\household_entity.schema.yaml",
+    "contracts\\offer.schema.yaml",
+    "contracts\\population_entity.schema.yaml",
+    "contracts\\scorecard.schema.yaml",
+    "population\\__init__.py",
+    "population\\synthesis.py",
+    "firms\\__init__.py",
+    "firms\\synthesis.py",
+    "offers\\__init__.py",
+    "offers\\normalize.py",
+    "scoring\\__init__.py",
+    "scoring\\engine.py",
+    "experiments\\__init__.py",
+    "experiments\\runner.py",
+    "validation\\__init__.py",
+    "validation\\provenance.py",
+    "scripts\\package_prompt01_evidence.py",
+    "tests\\test_contracts.py",
+    "tests\\test_foundation_files.py",
+    "tests\\test_interfaces.py",
+    "tests\\test_packaging.py",
+    "evidence\\commands.log",
+    "evidence\\prompt01_manifest.json",
+    "evidence\\source_catalog.json",
+    "evidence\\tests.log",
+    "evidence\\tree.txt",
+    "evidence\\zip_manifest.json"
+  ]
+}
+

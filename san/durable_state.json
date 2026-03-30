@@ -1,0 +1,90 @@
+{
+  "last_updated": "2026-03-30",
+  "current_focus": "Install a canonical SAN control plane around both existing product lines.",
+  "active_now": [
+    "Treat the repo as one workspace with two live product nodes.",
+    "Make SAN manifests the only write-authoritative repo-OS surfaces.",
+    "Keep prompt-era artifacts as historical evidence, not shadow authority.",
+    "Establish the first intentional git checkpoint on main."
+  ],
+  "next": [
+    "Refresh SAN mirrors from canonical manifests after any repo-OS change.",
+    "Run topology, sanlock, and preflight after major structure changes.",
+    "Keep Python and web verification green before publishing repo-OS changes."
+  ],
+  "blocked": [],
+  "decisions": [
+    {
+      "date": "2026-03-30",
+      "type": "INFERENCE",
+      "statement": "Preserve a dual-node repo shape instead of choosing a single canonical product line.",
+      "why": "Both the simulator and Jobs Pulse contain real working code, tests, and artifacts."
+    },
+    {
+      "date": "2026-03-30",
+      "type": "FACT",
+      "statement": "Canonical repo-OS truth now lives in SAN JSON manifests, not prompt-era docs.",
+      "why": "The blueprint requires singular control-plane authority."
+    },
+    {
+      "date": "2026-03-30",
+      "type": "INFERENCE",
+      "statement": "Generated repo mirrors are acceptable as long as they remain subordinate to the canonical SAN manifests.",
+      "why": "Equivalent manifestations are allowed when authority stays singular."
+    },
+    {
+      "date": "2026-03-30",
+      "type": "FACT",
+      "statement": "The canonical web test command is `npm --prefix apps/web test`, not a Jest-style `--runInBand` variant.",
+      "why": "The repo uses Vitest, and live verification showed the Jest flag is invalid in this web node."
+    }
+  ],
+  "unresolved": [
+    {
+      "severity": "medium",
+      "item": "Long-term remote forge policy is still unset because the repo has only local git today."
+    },
+    {
+      "severity": "low",
+      "item": "Future physical relocation of prompt-era historical artifacts is optional and not required for the initial SAN retrofit."
+    }
+  ],
+  "resume_instructions": [
+    "Read AGENTS.md, then san/control-plane.md, then san/state/durable-state.md.",
+    "Use san/runtime_manifest.json to choose commands instead of guessing.",
+    "Refresh topology and sanlock before broad structural changes.",
+    "Do not hand-edit generated mirrors when san_sync owns them."
+  ],
+  "baseline_checkpoint": {
+    "status": "pending_git_commit",
+    "policy": "The first commit on main containing the SAN control-plane files is the initial SAN-aligned checkpoint.",
+    "recorded_commit": null
+  },
+  "recurring_failures": [
+    {
+      "id": "shadow_authority_root_docs",
+      "occurrences": 3,
+      "status": "open",
+      "pattern": "Prompt-era root docs drifted away from the live product surfaces and acted like competing authority."
+    },
+    {
+      "id": "missing_repo_os_control_plane",
+      "occurrences": 3,
+      "status": "open",
+      "pattern": "The repo accumulated meaningful work without a canonical doctrine surface, durable state surface, or topology graph."
+    },
+    {
+      "id": "untracked_generated_clutter",
+      "occurrences": 2,
+      "status": "open",
+      "pattern": "Generated web and cache artifacts were present without a fully hardened ignore policy."
+    }
+  ],
+  "verification_snapshot": {
+    "status_before_retrofit": {
+      "python_tests": "pass",
+      "web_tests": "pass"
+    },
+    "last_checked": "2026-03-30"
+  }
+}

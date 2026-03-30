@@ -1,0 +1,4 @@
+area_cluster,weight,urbanization_proxy,digital_readiness,budget_pressure,evidence_refs,assumption_note
+core_metro,0.58,very_high,high,medium,dcs-census-2012-colombo-urban-households|dcs-computer-literacy-2023,Core urban cluster share inferred from high urban household concentration
+inner_suburb,0.27,high,medium_high,medium,dcs-census-2012-colombo-urban-households|dcs-computer-literacy-2023,Inner suburban belt for district households outside the densest core
+outer_commuter,0.15,medium,medium,high,dcs-census-2012-colombo-urban-households|dcs-economic-crisis-households-2023,Outer district households modeled with higher pressure and lower digital comfort

@@ -1,0 +1,79 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Normalized Offer
+type: object
+additionalProperties: false
+required:
+  - offer_id
+  - vendor_name
+  - vendor_country
+  - offer_name
+  - target_segment
+  - problem_category
+  - delivery_mode
+  - pricing_model
+  - language_support
+  - source_url
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+properties:
+  offer_id:
+    type: string
+    minLength: 1
+  vendor_name:
+    type: string
+    minLength: 1
+  vendor_country:
+    type: string
+    minLength: 2
+    maxLength: 2
+  offer_name:
+    type: string
+    minLength: 1
+  target_segment:
+    type: string
+    enum: [b2c, b2b_sme, b2b_enterprise, hybrid]
+  problem_category:
+    type: string
+    minLength: 1
+  delivery_mode:
+    type: string
+    enum: [saas, managed_service, on_prem, hybrid]
+  pricing_model:
+    type: string
+    enum: [subscription, usage_based, project_fee, custom_quote]
+  language_support:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1
+  source_url:
+    type: string
+    format: uri
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1
+  proof_points:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [type, summary]
+      properties:
+        type:
+          type: string
+        summary:
+          type: string
+          minLength: 1
+  assumption_note:
+    type: string

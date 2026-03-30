@@ -1,0 +1,2552 @@
+{
+  "nodes": [
+    {
+      "id": "offer-ameyo-contact-center-ai",
+      "label": "Contact Center AI",
+      "vendor": "Ameyo",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-arya-document-ai",
+      "label": "Document Intelligence",
+      "vendor": "Arya.ai",
+      "offer_kind": "candidate",
+      "problem_domain": "document_admin",
+      "substitute_cluster": "document_intelligence"
+    },
+    {
+      "id": "offer-corover-conversational-ai-platform",
+      "label": "Conversational AI Platform",
+      "vendor": "CoRover",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-embibe-personalized-learning",
+      "label": "Personalized Learning Platform",
+      "vendor": "Embibe",
+      "offer_kind": "candidate",
+      "problem_domain": "education_tutoring",
+      "substitute_cluster": "education_support"
+    },
+    {
+      "id": "offer-engati-conversational-ai",
+      "label": "Conversational AI Platform",
+      "vendor": "Engati",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-fasal-farm-advisory",
+      "label": "Fasal Precision Farming AI",
+      "vendor": "Fasal",
+      "offer_kind": "candidate",
+      "problem_domain": "ops_scheduling",
+      "substitute_cluster": "agri_vertical"
+    },
+    {
+      "id": "offer-gupshup-conversational-ai",
+      "label": "Conversation Cloud",
+      "vendor": "Gupshup",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-haptik-customer-experience",
+      "label": "Customer Experience Suite",
+      "vendor": "Haptik",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-infeedo-employee-experience",
+      "label": "Employee Experience AI",
+      "vendor": "Infeedo",
+      "offer_kind": "candidate",
+      "problem_domain": "hr_internal",
+      "substitute_cluster": "employee_service"
+    },
+    {
+      "id": "offer-leena-ai-agentic-helpdesk",
+      "label": "Agentic AI Helpdesk",
+      "vendor": "Leena AI",
+      "offer_kind": "candidate",
+      "problem_domain": "hr_internal",
+      "substitute_cluster": "employee_service"
+    },
+    {
+      "id": "offer-niramai-screening-ai",
+      "label": "Thermal Screening AI",
+      "vendor": "NIRAMAI",
+      "offer_kind": "candidate",
+      "problem_domain": "healthcare_screening",
+      "substitute_cluster": "healthcare_ai"
+    },
+    {
+      "id": "offer-observeai-contact-center",
+      "label": "Contact Center AI",
+      "vendor": "Observe.AI",
+      "offer_kind": "candidate",
+      "problem_domain": "analytics",
+      "substitute_cluster": "contact_center_intelligence"
+    },
+    {
+      "id": "offer-qure-radiology-ai",
+      "label": "Radiology AI Suite",
+      "vendor": "Qure.ai",
+      "offer_kind": "candidate",
+      "problem_domain": "healthcare_screening",
+      "substitute_cluster": "healthcare_ai"
+    },
+    {
+      "id": "offer-rephrase-personalized-video",
+      "label": "Personalized Video AI",
+      "vendor": "Rephrase.ai",
+      "offer_kind": "candidate",
+      "problem_domain": "sales_marketing",
+      "substitute_cluster": "marketing_personalization"
+    },
+    {
+      "id": "offer-skit-voice-ai",
+      "label": "Voice AI for Contact Centers",
+      "vendor": "Skit.ai",
+      "offer_kind": "candidate",
+      "problem_domain": "collections",
+      "substitute_cluster": "collections_voice"
+    },
+    {
+      "id": "offer-uniphore-automation-suite",
+      "label": "Enterprise AI Automation",
+      "vendor": "Uniphore",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "contact_center_intelligence"
+    },
+    {
+      "id": "offer-verloop-support-automation",
+      "label": "Support Automation",
+      "vendor": "Verloop.io",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-wysa-mental-health",
+      "label": "AI Mental Health Coach",
+      "vendor": "Wysa",
+      "offer_kind": "candidate",
+      "problem_domain": "mental_wellbeing",
+      "substitute_cluster": "wellbeing_support"
+    },
+    {
+      "id": "offer-yellow-dynamic-automation-platform",
+      "label": "Dynamic Automation Platform",
+      "vendor": "Yellow.ai",
+      "offer_kind": "candidate",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "offer-zoho-zia",
+      "label": "Zia for Business",
+      "vendor": "Zoho",
+      "offer_kind": "candidate",
+      "problem_domain": "analytics",
+      "substitute_cluster": "smb_ai_suite"
+    },
+    {
+      "id": "sub-doc990",
+      "label": "Doc990 Healthcare Booking",
+      "vendor": "Doc990",
+      "offer_kind": "local_substitute",
+      "problem_domain": "healthcare_access",
+      "substitute_cluster": "healthcare_access"
+    },
+    {
+      "id": "sub-echannelling",
+      "label": "eChannelling Health Booking",
+      "vendor": "eChannelling",
+      "offer_kind": "local_substitute",
+      "problem_domain": "healthcare_access",
+      "substitute_cluster": "healthcare_access"
+    },
+    {
+      "id": "sub-hsenidbiz",
+      "label": "hSenidBiz HRM Enterprise",
+      "vendor": "hSenidBiz",
+      "offer_kind": "local_substitute",
+      "problem_domain": "hr_internal",
+      "substitute_cluster": "employee_service"
+    },
+    {
+      "id": "sub-mytutor",
+      "label": "MyTutor Learning Marketplace",
+      "vendor": "MyTutor",
+      "offer_kind": "local_substitute",
+      "problem_domain": "education_tutoring",
+      "substitute_cluster": "education_support"
+    },
+    {
+      "id": "sub-pickme-business",
+      "label": "PickMe Logistics and Delivery",
+      "vendor": "PickMe",
+      "offer_kind": "local_substitute",
+      "problem_domain": "mobility_logistics",
+      "substitute_cluster": "logistics_substitute"
+    },
+    {
+      "id": "sub-dialog-enterprise",
+      "label": "Dialog Enterprise Digital Solutions",
+      "vendor": "Dialog Enterprise",
+      "offer_kind": "national_substitute",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "business_comms_suite"
+    },
+    {
+      "id": "sub-dp-education",
+      "label": "DP Education Platform",
+      "vendor": "DP Education",
+      "offer_kind": "national_substitute",
+      "problem_domain": "education_tutoring",
+      "substitute_cluster": "education_support"
+    },
+    {
+      "id": "sub-ikman-services",
+      "label": "ikman Marketplace Services",
+      "vendor": "ikman",
+      "offer_kind": "national_substitute",
+      "problem_domain": "classifieds_discovery",
+      "substitute_cluster": "classifieds_substitute"
+    },
+    {
+      "id": "sub-kapruka-merchant",
+      "label": "Kapruka Merchant Commerce",
+      "vendor": "Kapruka",
+      "offer_kind": "national_substitute",
+      "problem_domain": "commerce_enablement",
+      "substitute_cluster": "commerce_substitute"
+    },
+    {
+      "id": "sub-slt-business",
+      "label": "SLT-MOBITEL Business Solutions",
+      "vendor": "SLT-MOBITEL",
+      "offer_kind": "national_substitute",
+      "problem_domain": "connectivity_admin",
+      "substitute_cluster": "business_comms_suite"
+    },
+    {
+      "id": "bench-duolingo-max",
+      "label": "Duolingo Max",
+      "vendor": "Duolingo",
+      "offer_kind": "international_benchmark",
+      "problem_domain": "education_tutoring",
+      "substitute_cluster": "education_support"
+    },
+    {
+      "id": "bench-hubspot-ai",
+      "label": "HubSpot AI",
+      "vendor": "HubSpot",
+      "offer_kind": "international_benchmark",
+      "problem_domain": "sales_marketing",
+      "substitute_cluster": "marketing_personalization"
+    },
+    {
+      "id": "bench-intercom-fin",
+      "label": "Fin AI Agent",
+      "vendor": "Intercom",
+      "offer_kind": "international_benchmark",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    },
+    {
+      "id": "bench-notion-ai",
+      "label": "Notion AI",
+      "vendor": "Notion",
+      "offer_kind": "international_benchmark",
+      "problem_domain": "productivity",
+      "substitute_cluster": "productivity_suite"
+    },
+    {
+      "id": "bench-zendesk-ai",
+      "label": "Zendesk AI",
+      "vendor": "Zendesk",
+      "offer_kind": "international_benchmark",
+      "problem_domain": "customer_support",
+      "substitute_cluster": "support_automation"
+    }
+  ],
+  "edges": [
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-arya-document-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-corover-conversational-ai-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-engati-conversational-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-fasal-farm-advisory",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-gupshup-conversational-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-ameyo-contact-center-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-engati-conversational-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-fasal-farm-advisory",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-gupshup-conversational-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-arya-document-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-embibe-personalized-learning",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-engati-conversational-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-gupshup-conversational-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_problem_domain"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "sub-pickme-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "sub-ikman-services",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "bench-notion-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-corover-conversational-ai-platform",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "sub-mytutor",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "sub-pickme-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "sub-dp-education",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "sub-ikman-services",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-embibe-personalized-learning",
+      "target": "bench-notion-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-fasal-farm-advisory",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-gupshup-conversational-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-engati-conversational-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-gupshup-conversational-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-fasal-farm-advisory",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-haptik-customer-experience",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-gupshup-conversational-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-infeedo-employee-experience",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-haptik-customer-experience",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-leena-ai-agentic-helpdesk",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-infeedo-employee-experience",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-niramai-screening-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-leena-ai-agentic-helpdesk",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-observeai-contact-center",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-niramai-screening-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-qure-radiology-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_substitute_cluster",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-observeai-contact-center",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-rephrase-personalized-video",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-qure-radiology-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "offer-skit-voice-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-rephrase-personalized-video",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "offer-uniphore-automation-suite",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-skit-voice-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "offer-verloop-support-automation",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-uniphore-automation-suite",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "offer-yellow-dynamic-automation-platform",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-verloop-support-automation",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-wysa-mental-health",
+      "target": "sub-doc990",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-wysa-mental-health",
+      "target": "sub-echannelling",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-wysa-mental-health",
+      "target": "sub-mytutor",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-wysa-mental-health",
+      "target": "sub-dp-education",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-wysa-mental-health",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "offer-zoho-zia",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-yellow-dynamic-automation-platform",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "sub-hsenidbiz",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "offer-zoho-zia",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-doc990",
+      "target": "sub-echannelling",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "sub-doc990",
+      "target": "sub-mytutor",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-doc990",
+      "target": "sub-dp-education",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-doc990",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-echannelling",
+      "target": "sub-mytutor",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-echannelling",
+      "target": "sub-dp-education",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-echannelling",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "sub-dialog-enterprise",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-hsenidbiz",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-mytutor",
+      "target": "sub-dp-education",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "sub-mytutor",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "sub-pickme-business",
+      "target": "sub-ikman-services",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-pickme-business",
+      "target": "bench-notion-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dialog-enterprise",
+      "target": "sub-kapruka-merchant",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dialog-enterprise",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_substitute_cluster",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dialog-enterprise",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dialog-enterprise",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dialog-enterprise",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-dp-education",
+      "target": "bench-duolingo-max",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    },
+    {
+      "source": "sub-ikman-services",
+      "target": "bench-notion-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-kapruka-merchant",
+      "target": "sub-slt-business",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-kapruka-merchant",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-kapruka-merchant",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-kapruka-merchant",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-slt-business",
+      "target": "bench-hubspot-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-slt-business",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "sub-slt-business",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "bench-hubspot-ai",
+      "target": "bench-intercom-fin",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "bench-hubspot-ai",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_market_side"
+      ]
+    },
+    {
+      "source": "bench-intercom-fin",
+      "target": "bench-zendesk-ai",
+      "reasons": [
+        "same_problem_domain",
+        "same_substitute_cluster"
+      ]
+    }
+  ]
+}

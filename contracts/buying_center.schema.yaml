@@ -1,0 +1,52 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Buying Center
+type: object
+additionalProperties: false
+required:
+  - buying_center_id
+  - firm_id
+  - procurement_style
+  - risk_tolerance
+  - decision_roles
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+properties:
+  buying_center_id:
+    type: string
+    minLength: 1
+  firm_id:
+    type: string
+    minLength: 1
+  procurement_style:
+    type: string
+    enum: [owner_led, manager_led, committee_led]
+  risk_tolerance:
+    type: string
+    enum: [low, medium, high]
+  decision_roles:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [role, title]
+      properties:
+        role:
+          type: string
+          enum: [economic_buyer, technical_buyer, user_champion, approver]
+        title:
+          type: string
+          minLength: 1
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1

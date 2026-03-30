@@ -1,0 +1,15 @@
+{
+  "name": "Colombo Jobs Pulse",
+  "short_name": "Jobs Pulse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8ec",
+  "theme_color": "#ef6728",
+  "icons": [
+    {
+      "src": "/pulse-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

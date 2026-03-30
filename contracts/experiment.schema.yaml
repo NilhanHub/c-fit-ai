@@ -1,0 +1,47 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Experiment
+type: object
+additionalProperties: false
+required:
+  - experiment_id
+  - offer_batch_id
+  - scenario_pack
+  - random_seed
+  - market_slice_id
+  - selection_rule
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+properties:
+  experiment_id:
+    type: string
+    minLength: 1
+  offer_batch_id:
+    type: string
+    minLength: 1
+  scenario_pack:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1
+  random_seed:
+    type: integer
+  market_slice_id:
+    type: string
+    minLength: 1
+  selection_rule:
+    type: string
+    minLength: 1
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1

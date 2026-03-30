@@ -1,0 +1,72 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Population Entity
+type: object
+additionalProperties: false
+required:
+  - person_id
+  - household_id
+  - geo_id
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+  - demographics
+  - economics
+  - digital
+  - behavioral
+properties:
+  person_id:
+    type: string
+    minLength: 1
+  household_id:
+    type: string
+    minLength: 1
+  geo_id:
+    type: string
+    minLength: 1
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1
+  demographics:
+    type: object
+    additionalProperties: false
+    required: [age_band, gender]
+    properties:
+      age_band:
+        type: string
+      gender:
+        type: string
+  economics:
+    type: object
+    additionalProperties: false
+    required: [income_band_lkr_monthly]
+    properties:
+      income_band_lkr_monthly:
+        type: string
+  digital:
+    type: object
+    additionalProperties: false
+    required: [smartphone_access, internet_access]
+    properties:
+      smartphone_access:
+        type: string
+        enum: [none, shared, personal]
+      internet_access:
+        type: string
+        enum: [none, mobile_only, fixed_and_mobile]
+  behavioral:
+    type: object
+    additionalProperties: false
+    required: [adoption_posture]
+    properties:
+      adoption_posture:
+        type: string
+        enum: [laggard, late_majority, early_majority, early_adopter]

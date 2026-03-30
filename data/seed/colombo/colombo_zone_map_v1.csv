@@ -1,0 +1,14 @@
+zone_id,zone_label,zone_type,ds_division,commuter_role,claim_type,evidence_refs,assumption_note
+core_colombo,Core Colombo,high_density_core,Colombo,work_sink,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+core_colombo,Core Colombo,high_density_core,Thimbirigasyaya,work_sink,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+admin_professional_belt,Admin and Professional Belt,mixed_formal_residential,Sri Jayawardanapura Kotte,work_sink,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+admin_professional_belt,Admin and Professional Belt,mixed_formal_residential,Maharagama,commuter_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+east_growth_corridor,East Growth Corridor,urban_expansion,Kaduwela,commuter_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+east_growth_corridor,East Growth Corridor,urban_expansion,Kolonnawa,industrial_residential_mix,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+south_west_suburban,South-West Suburban Belt,consumer_service_residential,Dehiwala,commuter_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+south_west_suburban,South-West Suburban Belt,consumer_service_residential,Ratmalana,industrial_residential_mix,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+south_west_suburban,South-West Suburban Belt,consumer_service_residential,Moratuwa,local_service_hub,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+south_west_suburban,South-West Suburban Belt,consumer_service_residential,Kesbewa,commuter_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+outer_commuter_belt,Outer Commuter Belt,peri_urban_mixed,Homagama,commuter_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+outer_commuter_belt,Outer Commuter Belt,peri_urban_mixed,Hanwella,peri_urban_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity
+outer_commuter_belt,Outer Commuter Belt,peri_urban_mixed,Padukka,peri_urban_source,INFERENCE,dcs-cph-2024-basic-population-ds,Grouped DS divisions into a commercial zone for v1 simulation clarity

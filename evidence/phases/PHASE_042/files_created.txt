@@ -1,0 +1,10 @@
+COMMERCIAL_TARGET_STATE.md
+DECISIONS.md
+PROMPT03_CONTINUITY_AUDIT.md
+PROMPT03_MASTER_PLAN.md
+PROMPT03_PHASE_TRACKER.md
+REJECTED_IDEAS.md
+STATUS.md
+research\source_hierarchy.md
+research\source_refresh_log.md
+task_rubric.md

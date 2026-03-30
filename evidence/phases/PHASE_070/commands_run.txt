@@ -1,0 +1,4 @@
+Get-ChildItem -Force
+rg --files
+python scripts/run_prompt03_pipeline.py
+python scripts/package_prompt03_evidence.py

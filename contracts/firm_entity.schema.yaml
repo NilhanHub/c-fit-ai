@@ -1,0 +1,53 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Firm Entity
+type: object
+additionalProperties: false
+required:
+  - firm_id
+  - geo_id
+  - sector_code
+  - size_band
+  - formality
+  - digital_maturity
+  - budget_posture
+  - adoption_friction
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+properties:
+  firm_id:
+    type: string
+    minLength: 1
+  geo_id:
+    type: string
+    minLength: 1
+  sector_code:
+    type: string
+    minLength: 1
+  size_band:
+    type: string
+    enum: [micro, small, medium]
+  formality:
+    type: string
+    enum: [formal, informal, mixed]
+  digital_maturity:
+    type: string
+    enum: [nascent, emerging, operational, advanced]
+  budget_posture:
+    type: string
+    enum: [constrained, targeted, expansionary]
+  adoption_friction:
+    type: string
+    enum: [low, medium, high]
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1

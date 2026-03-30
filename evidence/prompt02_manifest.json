@@ -1,0 +1,37 @@
+{
+  "prompt": "PROMPT#02",
+  "generated_at": "2026-03-16T13:57:15.501642+00:00",
+  "households": 1500,
+  "people": 5867,
+  "firms": 800,
+  "buying_centers": 800,
+  "offers": 15,
+  "scenarios": [
+    "colombo_b2c_base",
+    "colombo_b2b_base",
+    "mixed_market_base",
+    "budget_sensitive_market",
+    "low_digital_readiness_market",
+    "trust_friction_heavy_market",
+    "smb_heavy_market",
+    "youth_heavy_consumer_market",
+    "urban_sri_lanka_expansion"
+  ],
+  "top_mixed_market_offer": "offer-embibe-personalized-learning",
+  "artifacts": [
+    "reports\\b2c_model_report.md",
+    "reports\\b2b_model_report.md",
+    "reports\\offer_corpus_report.md",
+    "reports\\b2c_scoring_framework.md",
+    "reports\\b2b_scoring_framework.md",
+    "reports\\ranking_report.md",
+    "reports\\validation_report.md",
+    "qa\\test_report.md",
+    "qa\\known_gaps.md",
+    "qa\\morning_decisions.md",
+    "HANDOFF\\BUILD_STATUS.md",
+    "HANDOFF\\TOP_FINDINGS.md",
+    "HANDOFF\\MORNING_BRIEF.md",
+    "HANDOFF\\NEXT_72_HOURS.md"
+  ]
+}

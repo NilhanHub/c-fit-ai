@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "sanBlueprintEdition": "3.7",
+  "graphKind": "hybrid",
+  "authoritative": true,
+  "nodeBudgetPolicy": {
+    "targetMaxNodeLoadPercent": 5,
+    "reviewTriggerPercent": 5,
+    "mandatoryDispersionReviewPercent": 10,
+    "allowExceptionalNodes": true,
+    "notes": "Effective load is weighted structural burden, not raw LOC alone."
+  },
+  "factors": [
+    "codeSurfaceShare",
+    "dependencyCentrality",
+    "fanInFanOutPressure",
+    "affectedRadius",
+    "changeFrequency",
+    "runtimeCriticality",
+    "verificationSpan",
+    "hiddenStateRisk"
+  ],
+  "agentOrientation": {
+    "canonicalDoctrineSurface": "AGENTS.md or equivalent canonical doctrine surface",
+    "canonicalControlPlaneSurface": "san/control-plane.md or equivalent canonical control-plane surface",
+    "canonicalDurableStateSurface": "san/state/durable-state.md or equivalent durable-state surface",
+    "canonicalPreflightSurface": "san/preflight.md or equivalent SAN preflight log",
+    "canonicalSanlockSurface": "san/sanlock.md or equivalent SANLOCK log",
+    "defaultColdStartSequence": [
+      "Read the canonical doctrine surface",
+      "Read the canonical control-plane surface",
+      "Read the canonical durable-state surface",
+      "Read the latest SAN preflight findings",
+      "Read the topology graph to pick the bounded node",
+      "Read the latest SANLOCK scoring log"
+    ],
+    "defaultExecutionEntrypoints": [
+      "Declare the canonical execution entrypoints for the repo here"
+    ],
+    "defaultVerificationEntrypoints": [
+      "Declare the canonical verification entrypoints for the repo here"
+    ],
+    "notes": "Optional stateless-agent orientation metadata extending the 3.7 topology template without changing the core node/edge model."
+  },
+  "nodes": [
+    {
+      "id": "node.example",
+      "label": "Example bounded node",
+      "role": "feature",
+      "parentId": null,
+      "childIds": [],
+      "declaredDependencies": [],
+      "observedDependencies": [],
+      "verificationScope": [],
+      "status": {
+        "exceptionalNode": false,
+        "splitCandidate": false,
+        "hotspot": false
+      },
+      "effectiveLoad": {
+        "percent": 0.0,
+        "factorScores": {
+          "codeSurfaceShare": 0,
+          "dependencyCentrality": 0,
+          "fanInFanOutPressure": 0,
+          "affectedRadius": 0,
+          "changeFrequency": 0,
+          "runtimeCriticality": 0,
+          "verificationSpan": 0,
+          "hiddenStateRisk": 0
+        }
+      },
+      "dispersionReadiness": {
+        "score": 0,
+        "contractsExplicit": false,
+        "localizedTests": false,
+        "isolatedSideEffects": false,
+        "stablePublicSurface": false,
+        "minimalHiddenMutableState": false,
+        "clearResponsibility": false
+      },
+      "notes": "Optional stateless-agent hints make it easier for a cold-start agent to jump from topology truth to the right files and commands.",
+      "pathHints": [
+        "path/to/canonical/files/or/directories"
+      ],
+      "executionEntrypoints": [
+        "command or runtime entrypoint that primarily exercises this node"
+      ],
+      "verificationEntrypoints": [
+        "command, script, or checklist that verifies this node"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "node.example",
+      "to": "node.other",
+      "type": "declaredDependency"
+    }
+  ],
+  "integrity": {
+    "declaredObservedDriftScore": 0,
+    "cyclesPresent": false,
+    "lastTopologyReview": "",
+    "lastSanlockReview": ""
+  }
+}

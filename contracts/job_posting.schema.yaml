@@ -1,0 +1,84 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Job Posting
+type: object
+additionalProperties: false
+required:
+  - job_id
+  - employer_id
+  - title
+  - role_family
+  - location
+  - salary
+  - trust
+  - apply_mode
+  - posted_at
+  - verified_at
+properties:
+  job_id:
+    type: string
+    minLength: 1
+  employer_id:
+    type: string
+    minLength: 1
+  title:
+    type: string
+    minLength: 1
+  role_family:
+    type: string
+    minLength: 1
+  location:
+    type: object
+    additionalProperties: false
+    required: [label, district]
+    properties:
+      label:
+        type: string
+      district:
+        type: string
+      commute_minutes:
+        type: integer
+        minimum: 0
+  salary:
+    type: object
+    additionalProperties: false
+    required: [currency, disclosed]
+    properties:
+      currency:
+        type: string
+      disclosed:
+        type: boolean
+      min:
+        type: integer
+      max:
+        type: integer
+  trust:
+    type: object
+    additionalProperties: false
+    required: [verification_level, trust_badges]
+    properties:
+      verification_level:
+        type: string
+        enum: [unverified, provisional, verified, trusted_fast_response]
+      trust_badges:
+        type: array
+        items:
+          type: string
+      scam_warning:
+        type: string
+  apply_mode:
+    type: string
+    enum: [quick_apply, external_apply, walk_in]
+  posted_at:
+    type: string
+    format: date-time
+  verified_at:
+    type: string
+    format: date-time
+  story_ids:
+    type: array
+    items:
+      type: string
+  tags:
+    type: array
+    items:
+      type: string

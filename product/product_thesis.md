@@ -1,0 +1,3 @@
+# Product Thesis
+
+`INFERENCE` Colombo Jobs Pulse should win by becoming the **most trustworthy place to see what just changed in your job search**. It combines the utility of a local professional hiring platform with a disciplined 24-hour story layer that turns urgent hiring bursts, walk-ins, and candidate proof points into fast action. The product is not trying to maximize scrolling time; it is trying to maximize **useful re-checking**. A young person in Colombo should feel that opening the product again might reveal a fresh verified job, an employer response, a walk-in alert, or a story that directly helps them apply or get noticed.

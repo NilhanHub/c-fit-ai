@@ -1,0 +1,35 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Employer Profile
+type: object
+additionalProperties: false
+required:
+  - employer_id
+  - company_name
+  - verification_level
+  - response_speed_label
+  - trust_badges
+properties:
+  employer_id:
+    type: string
+  company_name:
+    type: string
+  domain:
+    type: string
+  verification_level:
+    type: string
+    enum: [unverified, provisional, verified, trusted_fast_response]
+  response_speed_label:
+    type: string
+    enum: [unknown, within_days, within_24h, within_hours]
+  trust_badges:
+    type: array
+    items:
+      type: string
+  active_job_count:
+    type: integer
+    minimum: 0
+  story_posting_enabled:
+    type: boolean
+  report_count_last_90d:
+    type: integer
+    minimum: 0

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "score-leads-market-simulator"
+version = "0.1.0"
+description = "Agent-native research and simulation foundation for scoring external AI offers against virtual Colombo and urban Sri Lanka markets."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "jsonschema>=4.23.0",
+  "mesa>=3.1.5",
+  "PyYAML>=6.0.2",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = [
+  "population",
+  "firms",
+  "offers",
+  "scoring",
+  "simulation",
+  "experiments",
+  "validation",
+]

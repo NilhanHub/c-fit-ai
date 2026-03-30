@@ -1,0 +1,16 @@
+surface,clarity,urgency,trust_legibility,actionability,repeat_check_energy,density_quality,mobile_suitability,desktop_composition,visual_hierarchy,product_credibility,emotional_pull,looks_live
+onboarding,8,7,7,8,7,8,9,8,8,8,8,7
+top_summary_strip,8,8,8,8,8,8,8,8,8,8,7,8
+urgent_stories,8,8,8,8,9,8,8,8,9,8,8,8
+fresh_jobs_list,8,8,8,9,8,8,8,8,8,8,7,8
+job_detail_application_pulse,8,8,9,9,8,8,7,9,8,9,7,8
+saved_searches,7,7,7,7,7,7,7,8,7,8,6,7
+alerts,8,8,8,8,8,7,7,8,8,8,6,8
+story_composer,7,7,7,8,7,7,8,8,7,8,6,7
+employer_story_composer,7,7,8,8,7,7,8,8,7,8,6,7
+trust_explanation_block,7,7,8,6,6,7,7,8,7,8,5,7
+global_layout,8,8,8,8,8,8,8,9,8,9,7,8
+cta_hierarchy,8,8,8,9,8,8,8,8,8,8,7,8
+chip_tag_language,8,7,8,7,7,8,8,8,8,8,6,7
+trust_badges,8,7,9,8,7,8,8,8,8,9,6,8
+status_markers,8,8,8,8,8,7,8,8,7,8,6,8

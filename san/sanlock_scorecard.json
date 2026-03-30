@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-03-30T16:14:00Z",
+  "blueprint_edition": "3.7",
+  "scores": [
+    {
+      "category": "control_plane_authority",
+      "score": 4,
+      "evidence": "AGENTS.md plus canonical SAN manifests exist."
+    },
+    {
+      "category": "versioned_change_stewardship",
+      "score": 2,
+      "evidence": "Local git exists and a baseline commit is required for full strength."
+    },
+    {
+      "category": "durable_state_freshness",
+      "score": 4,
+      "evidence": "Durable state last updated 2026-03-30."
+    },
+    {
+      "category": "resume_handoff_quality",
+      "score": 4,
+      "evidence": "Resume instructions, decisions, and baseline policy are present."
+    },
+    {
+      "category": "verification_integrity",
+      "score": 4,
+      "evidence": "Runtime manifest and SAN verification scripts are defined."
+    },
+    {
+      "category": "command_determinism",
+      "score": 4,
+      "evidence": "san_sync, san_preflight, san_topology, sanlock, and san_verify provide rerunnable mutation and audit paths."
+    },
+    {
+      "category": "reviewability_safety_hygiene",
+      "score": 4,
+      "evidence": "Git ignore policy and bounded-node control plane are present."
+    },
+    {
+      "category": "topology_graph_freshness",
+      "score": 4,
+      "evidence": "Topology graph exists and records bounded nodes."
+    },
+    {
+      "category": "node_budget_health",
+      "score": 3,
+      "evidence": "Node budgets are now measurable, with hotspot and split-candidate flags."
+    },
+    {
+      "category": "declared_observed_topology_drift",
+      "score": 5,
+      "evidence": "Current declared and observed dependencies are aligned."
+    },
+    {
+      "category": "dispersion_readiness",
+      "score": 4,
+      "evidence": "All declared nodes expose ownership roots, verification entrypoints, and dispersion-readiness fields."
+    },
+    {
+      "category": "artifact_class_hygiene",
+      "score": 4,
+      "evidence": "Artifact classes and export boundary rules are explicit."
+    },
+    {
+      "category": "outward_boundary_health",
+      "score": 4,
+      "evidence": "Outward sharing is inactive and private-by-default classes are declared."
+    }
+  ],
+  "summary": "SAN maturity averages 3.85/5 across the current minimum scorecard.",
+  "findings": {
+    "hotspots": [
+      {
+        "node": "san.repo_os",
+        "load_percent": 16.12
+      },
+      {
+        "node": "sim.market_core",
+        "load_percent": 14.47
+      },
+      {
+        "node": "sim.research_evidence",
+        "load_percent": 14.42
+      },
+      {
+        "node": "jobs.web_app",
+        "load_percent": 15.03
+      },
+      {
+        "node": "jobs.product_doctrine",
+        "load_percent": 11.09
+      },
+      {
+        "node": "jobs.design_ux",
+        "load_percent": 11.63
+      },
+      {
+        "node": "shared.tests_and_scripts",
+        "load_percent": 17.24
+      }
+    ],
+    "overweight_nodes": [
+      {
+        "node": "san.repo_os",
+        "load_percent": 16.12
+      },
+      {
+        "node": "sim.market_core",
+        "load_percent": 14.47
+      },
+      {
+        "node": "sim.research_evidence",
+        "load_percent": 14.42
+      },
+      {
+        "node": "jobs.web_app",
+        "load_percent": 15.03
+      },
+      {
+        "node": "jobs.product_doctrine",
+        "load_percent": 11.09
+      },
+      {
+        "node": "jobs.design_ux",
+        "load_percent": 11.63
+      },
+      {
+        "node": "shared.tests_and_scripts",
+        "load_percent": 17.24
+      }
+    ],
+    "drift_findings": [],
+    "over_constraint_findings": [],
+    "under_specification_findings": [
+      "Remote-forge policy remains unset.",
+      "Baseline commit is still pending until git history exists."
+    ],
+    "recommended_actions": [
+      "Keep prompt-era artifacts historical and out of the control plane.",
+      "Refresh topology and SANLOCK after structural changes.",
+      "Maintain repo mirrors through san_sync instead of manual edits."
+    ]
+  }
+}

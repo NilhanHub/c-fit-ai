@@ -1,0 +1,64 @@
+{
+  "repo_shape": "dual-node",
+  "default_shell": "powershell",
+  "cold_start_sequence": [
+    "AGENTS.md",
+    "san/control-plane.md",
+    "san/state/durable-state.md",
+    "san/preflight.md",
+    "san/topology/node-index.md",
+    "san/sanlock.md"
+  ],
+  "execution_entrypoints": {
+    "simulator": [
+      "uv run python scripts/run_prompt03_pipeline.py"
+    ],
+    "jobs_web": [
+      "npm --prefix apps/web dev",
+      "npm --prefix apps/web build"
+    ],
+    "san": [
+      "uv run python scripts/san_sync.py",
+      "uv run python scripts/san_preflight.py",
+      "uv run python scripts/san_topology.py",
+      "uv run python scripts/sanlock.py"
+    ]
+  },
+  "verification_entrypoints": {
+    "python": [
+      "uv run pytest -q"
+    ],
+    "web": [
+      "npm --prefix apps/web test",
+      "npm --prefix apps/web run typecheck"
+    ],
+    "san": [
+      "uv run python scripts/san_sync.py --check",
+      "uv run python scripts/san_preflight.py",
+      "uv run python scripts/san_topology.py",
+      "uv run python scripts/sanlock.py",
+      "uv run python scripts/san_verify.py"
+    ]
+  },
+  "ignore_path_parts": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    ".pytest_cache",
+    ".benchmarks",
+    "node_modules",
+    "dist"
+  ],
+  "ignored_suffixes": [
+    ".pyc",
+    ".pyo",
+    ".pyd",
+    ".zip",
+    ".tsbuildinfo"
+  ],
+  "canonical_entrypoint_notes": [
+    "Use san_sync for mirror generation and drift checks.",
+    "Use san_topology before sanlock when topology-affecting changes land.",
+    "Use san_verify for a repo-wide proof run."
+  ]
+}

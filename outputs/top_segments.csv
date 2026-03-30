@@ -1,0 +1,11 @@
+market,segment_id,segment_label,share,commercial_readiness
+b2c,b2c_affluent_service_optimizers,Affluent service optimizers,0.188824,95.25
+b2c,b2c_everyday_utility_seekers,Everyday utility seekers,0.118088,83.81
+b2b,b2b_knowledge_and_admin_smes,Knowledge and admin SMEs,0.179167,80.14
+b2c,b2c_youth_upskilling_renters,Youth upskilling renters,0.119706,72.86
+b2b,b2b_service_admin_clusters,Service admin clusters,0.124167,63.08
+b2c,b2c_budget_stretched_commuters,Budget-stretched commuters,0.366618,62.87
+b2c,b2c_care_navigation_households,Care navigation households,0.083676,60.66
+b2b,b2b_consumer_service_smes,Consumer-service SMEs,0.115,57.95
+b2b,b2b_field_and_flow_operators,Field and flow operators,0.198333,55.39
+b2b,b2b_frontline_micro_operators,Frontline micro operators,0.256667,36.57

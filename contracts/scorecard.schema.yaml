@@ -1,0 +1,82 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Scorecard
+type: object
+additionalProperties: false
+required:
+  - offer_id
+  - market_segment_id
+  - scenario_id
+  - dimension_scores
+  - raw_score
+  - weighted_score
+  - confidence_score
+  - evidence_score
+  - simulation_score
+  - final_rank_score
+  - blockers
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+properties:
+  offer_id:
+    type: string
+    minLength: 1
+  market_segment_id:
+    type: string
+    minLength: 1
+  scenario_id:
+    type: string
+    minLength: 1
+  dimension_scores:
+    type: object
+    minProperties: 1
+    propertyNames:
+      type: string
+    additionalProperties:
+      type: number
+      minimum: 0
+      maximum: 100
+  raw_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  weighted_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  confidence_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  evidence_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  simulation_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  final_rank_score:
+    type: number
+    minimum: 0
+    maximum: 100
+  blockers:
+    type: array
+    items:
+      type: string
+  rationales:
+    type: object
+    additionalProperties:
+      type: string
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1

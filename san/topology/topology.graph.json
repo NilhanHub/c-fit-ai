@@ -1,0 +1,732 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "sanBlueprintEdition": "3.7",
+  "graphKind": "hybrid",
+  "authoritative": true,
+  "nodeBudgetPolicy": {
+    "targetMaxNodeLoadPercent": 5,
+    "reviewTriggerPercent": 5,
+    "mandatoryDispersionReviewPercent": 10,
+    "allowExceptionalNodes": true,
+    "notes": "Effective load is weighted structural burden, not raw LOC alone."
+  },
+  "factors": [
+    "codeSurfaceShare",
+    "dependencyCentrality",
+    "fanInFanOutPressure",
+    "affectedRadius",
+    "changeFrequency",
+    "runtimeCriticality",
+    "verificationSpan",
+    "hiddenStateRisk"
+  ],
+  "agentOrientation": {
+    "canonicalDoctrineSurface": "AGENTS.md",
+    "canonicalControlPlaneSurface": "san/control_plane.json",
+    "canonicalDurableStateSurface": "san/durable_state.json",
+    "canonicalPreflightSurface": "san/preflight.md",
+    "canonicalSanlockSurface": "san/sanlock.md",
+    "defaultColdStartSequence": [
+      "Read AGENTS.md",
+      "Read san/control-plane.md",
+      "Read san/state/durable-state.md",
+      "Read san/preflight.md",
+      "Read san/topology/node-index.md",
+      "Read san/sanlock.md"
+    ],
+    "defaultExecutionEntrypoints": [
+      "uv run python scripts/run_prompt03_pipeline.py",
+      "npm --prefix apps/web dev"
+    ],
+    "defaultVerificationEntrypoints": [
+      "uv run pytest -q",
+      "npm --prefix apps/web test -- --runInBand",
+      "uv run python scripts/san_verify.py"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "san.repo_os",
+      "label": "SAN repo operating system",
+      "role": "control-plane",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "AGENTS.md",
+        "san",
+        "README.md",
+        "AGENT_GUIDE.md",
+        "STATUS.md",
+        "DECISIONS.md",
+        "task_rubric.md",
+        ".gitignore"
+      ],
+      "declaredDependencies": [
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "AGENTS.md",
+        "san/*.json",
+        "scripts/san_*.py"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 16.12,
+        "factorScores": {
+          "codeSurfaceShare": 0.06,
+          "dependencyCentrality": 4,
+          "fanInFanOutPressure": 4,
+          "affectedRadius": 5,
+          "changeFrequency": 4,
+          "runtimeCriticality": 5,
+          "verificationSpan": 4,
+          "hiddenStateRisk": 3
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "AGENTS.md",
+        "san",
+        "scripts/san_*.py"
+      ],
+      "executionEntrypoints": [
+        "uv run python scripts/san_sync.py",
+        "uv run python scripts/san_preflight.py"
+      ],
+      "verificationEntrypoints": [
+        "uv run python scripts/san_sync.py --check",
+        "uv run python scripts/sanlock.py"
+      ],
+      "measuredSurface": {
+        "file_count": 27,
+        "total_bytes": 172696,
+        "sample_paths": [
+          ".gitignore",
+          "AGENT_GUIDE.md",
+          "AGENTS.md",
+          "DECISIONS.md",
+          "README.md",
+          "san/artifact_classes.json",
+          "san/control-plane.md",
+          "san/control_plane.json",
+          "san/durable_state.json",
+          "san/preflight.md"
+        ]
+      }
+    },
+    {
+      "id": "sim.market_core",
+      "label": "Market simulator code surface",
+      "role": "product",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "population",
+        "firms",
+        "offers",
+        "scoring",
+        "simulation",
+        "experiments",
+        "validation",
+        "contracts"
+      ],
+      "declaredDependencies": [
+        "sim.research_evidence",
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "sim.research_evidence",
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "tests/test_prompt02_models.py",
+        "tests/test_prompt03_market_v2.py",
+        "uv run pytest -q"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 14.47,
+        "factorScores": {
+          "codeSurfaceShare": 0.08,
+          "dependencyCentrality": 4,
+          "fanInFanOutPressure": 4,
+          "affectedRadius": 4,
+          "changeFrequency": 3,
+          "runtimeCriticality": 4,
+          "verificationSpan": 4,
+          "hiddenStateRisk": 3
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "population",
+        "firms",
+        "offers",
+        "scoring"
+      ],
+      "executionEntrypoints": [
+        "uv run python scripts/run_prompt03_pipeline.py"
+      ],
+      "verificationEntrypoints": [
+        "uv run pytest -q"
+      ],
+      "measuredSurface": {
+        "file_count": 101,
+        "total_bytes": 209027,
+        "sample_paths": [
+          "contracts/alert.schema.yaml",
+          "contracts/buying_center.schema.yaml",
+          "contracts/employer_profile.schema.yaml",
+          "contracts/experiment.schema.yaml",
+          "contracts/firm_entity.schema.yaml",
+          "contracts/household_entity.schema.yaml",
+          "contracts/job_posting.schema.yaml",
+          "contracts/offer.schema.yaml",
+          "contracts/population_entity.schema.yaml",
+          "contracts/scorecard.schema.yaml"
+        ]
+      }
+    },
+    {
+      "id": "sim.research_evidence",
+      "label": "Market simulator research and evidence surface",
+      "role": "evidence",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "data",
+        "research",
+        "reports",
+        "model",
+        "outputs",
+        "MARKET_MODEL_SPEC.md",
+        "RESEARCH_METHODOLOGY.md",
+        "SCORING_FRAMEWORK.md",
+        "POPULATION_MODEL_PLAN.md",
+        "FIRM_MODEL_PLAN.md",
+        "OFFER_DISCOVERY_PLAN.md",
+        "EXPERIMENT_PLAN.md"
+      ],
+      "declaredDependencies": [
+        "sim.market_core",
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "sim.market_core",
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "outputs/*",
+        "reports/*",
+        "tests/test_prompt03_artifacts_v2.py"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 14.42,
+        "factorScores": {
+          "codeSurfaceShare": 5.0,
+          "dependencyCentrality": 3,
+          "fanInFanOutPressure": 3,
+          "affectedRadius": 3,
+          "changeFrequency": 3,
+          "runtimeCriticality": 3,
+          "verificationSpan": 4,
+          "hiddenStateRisk": 2
+        }
+      },
+      "dispersionReadiness": {
+        "score": 3,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "data",
+        "research",
+        "reports",
+        "outputs"
+      ],
+      "executionEntrypoints": [
+        "uv run python scripts/run_prompt03_pipeline.py"
+      ],
+      "verificationEntrypoints": [
+        "uv run pytest -q"
+      ],
+      "measuredSurface": {
+        "file_count": 90,
+        "total_bytes": 61135175,
+        "sample_paths": [
+          "data/curated/colombo_alternatives_v1.csv",
+          "data/curated/india_ai_offers_v1.csv",
+          "data/curated/india_ai_offers_v2.csv",
+          "data/curated/international_benchmarks_v1.csv",
+          "data/curated/sri_lanka_alternatives_v1.csv",
+          "data/seed/colombo/b2b_firm_archetypes.csv",
+          "data/seed/colombo/b2b_firm_archetypes_v2.csv",
+          "data/seed/colombo/b2c_age_weights.csv",
+          "data/seed/colombo/b2c_area_clusters.csv",
+          "data/seed/colombo/b2c_household_archetypes.csv"
+        ]
+      }
+    },
+    {
+      "id": "jobs.web_app",
+      "label": "Jobs Pulse web application",
+      "role": "product",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "apps/web"
+      ],
+      "declaredDependencies": [
+        "jobs.product_doctrine",
+        "jobs.design_ux",
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "jobs.product_doctrine",
+        "jobs.design_ux",
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "apps/web/src",
+        "npm --prefix apps/web test -- --runInBand",
+        "npm --prefix apps/web typecheck"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 15.03,
+        "factorScores": {
+          "codeSurfaceShare": 0.09,
+          "dependencyCentrality": 4,
+          "fanInFanOutPressure": 4,
+          "affectedRadius": 4,
+          "changeFrequency": 4,
+          "runtimeCriticality": 4,
+          "verificationSpan": 4,
+          "hiddenStateRisk": 3
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "apps/web/src",
+        "apps/web/package.json"
+      ],
+      "executionEntrypoints": [
+        "npm --prefix apps/web dev",
+        "npm --prefix apps/web build"
+      ],
+      "verificationEntrypoints": [
+        "npm --prefix apps/web test -- --runInBand",
+        "npm --prefix apps/web typecheck"
+      ],
+      "measuredSurface": {
+        "file_count": 26,
+        "total_bytes": 240622,
+        "sample_paths": [
+          "apps/web/eslint.config.js",
+          "apps/web/index.html",
+          "apps/web/package-lock.json",
+          "apps/web/package.json",
+          "apps/web/public/pulse-icon.svg",
+          "apps/web/public/site.webmanifest",
+          "apps/web/src/App.tsx",
+          "apps/web/src/data/demoData.ts",
+          "apps/web/src/lib/feed.test.ts",
+          "apps/web/src/lib/feed.ts"
+        ]
+      }
+    },
+    {
+      "id": "jobs.product_doctrine",
+      "label": "Jobs Pulse product and architecture doctrine",
+      "role": "product-doctrine",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "product",
+        "architecture",
+        "alerts",
+        "ranking",
+        "employer"
+      ],
+      "declaredDependencies": [
+        "jobs.web_app",
+        "jobs.design_ux",
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "jobs.web_app",
+        "jobs.design_ux",
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "tests/test_prompt03_jobs_pulse_artifacts.py",
+        "tests/test_prompt05_artifacts.py"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 11.09,
+        "factorScores": {
+          "codeSurfaceShare": 0.0,
+          "dependencyCentrality": 3,
+          "fanInFanOutPressure": 3,
+          "affectedRadius": 3,
+          "changeFrequency": 3,
+          "runtimeCriticality": 3,
+          "verificationSpan": 3,
+          "hiddenStateRisk": 2
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "product",
+        "architecture",
+        "alerts",
+        "ranking"
+      ],
+      "executionEntrypoints": [
+        "npm --prefix apps/web dev"
+      ],
+      "verificationEntrypoints": [
+        "uv run pytest -q"
+      ],
+      "measuredSurface": {
+        "file_count": 19,
+        "total_bytes": 9200,
+        "sample_paths": [
+          "alerts/alerts_surface_v2.md",
+          "alerts/delta_alert_logic.md",
+          "alerts/prompt05_alert_surface_rebuild.md",
+          "alerts/saved_search_surface_v2.md",
+          "architecture/analytics_events.md",
+          "architecture/api_contracts.md",
+          "architecture/background_jobs.md",
+          "architecture/data_model.md",
+          "architecture/last_visit_event_model.md",
+          "architecture/system_overview.md"
+        ]
+      }
+    },
+    {
+      "id": "jobs.design_ux",
+      "label": "Jobs Pulse design, UX, stories, and trust surfaces",
+      "role": "design",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "design",
+        "ux",
+        "stories",
+        "trust",
+        "mobile",
+        "desktop",
+        "copy",
+        "demo"
+      ],
+      "declaredDependencies": [
+        "jobs.web_app",
+        "jobs.product_doctrine",
+        "shared.tests_and_scripts"
+      ],
+      "observedDependencies": [
+        "jobs.web_app",
+        "jobs.product_doctrine",
+        "shared.tests_and_scripts"
+      ],
+      "verificationScope": [
+        "tests/test_prompt03_jobs_pulse_artifacts.py",
+        "tests/test_prompt05_artifacts.py"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 11.63,
+        "factorScores": {
+          "codeSurfaceShare": 1.97,
+          "dependencyCentrality": 3,
+          "fanInFanOutPressure": 3,
+          "affectedRadius": 3,
+          "changeFrequency": 3,
+          "runtimeCriticality": 2,
+          "verificationSpan": 3,
+          "hiddenStateRisk": 2
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "design",
+        "ux",
+        "stories",
+        "trust"
+      ],
+      "executionEntrypoints": [
+        "npm --prefix apps/web dev"
+      ],
+      "verificationEntrypoints": [
+        "uv run pytest -q"
+      ],
+      "measuredSurface": {
+        "file_count": 71,
+        "total_bytes": 5317910,
+        "sample_paths": [
+          "copy/microcopy_dictionary.md",
+          "copy/prompt05_copy_rewrite.md",
+          "copy/trust_and_warning_lexicon.md",
+          "demo/demo_dataset.md",
+          "demo/demo_dataset_v3.md",
+          "demo/demo_script.md",
+          "demo/prompt05_data_realism.md",
+          "demo/screens/after/prompt05-feed-desktop.png",
+          "demo/screens/after/prompt05-feed-mobile-viewport.png",
+          "demo/screens/after/prompt05-feed-mobile.png"
+        ]
+      }
+    },
+    {
+      "id": "shared.tests_and_scripts",
+      "label": "Shared tests and command surfaces",
+      "role": "shared",
+      "parentId": null,
+      "childIds": [],
+      "ownershipRoots": [
+        "tests",
+        "scripts",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "declaredDependencies": [
+        "sim.market_core",
+        "jobs.web_app",
+        "san.repo_os"
+      ],
+      "observedDependencies": [
+        "sim.market_core",
+        "jobs.web_app",
+        "san.repo_os"
+      ],
+      "verificationScope": [
+        "uv run pytest -q",
+        "uv run python scripts/san_verify.py"
+      ],
+      "status": {
+        "exceptionalNode": true,
+        "splitCandidate": true,
+        "hotspot": true
+      },
+      "effectiveLoad": {
+        "percent": 17.24,
+        "factorScores": {
+          "codeSurfaceShare": 0.09,
+          "dependencyCentrality": 5,
+          "fanInFanOutPressure": 5,
+          "affectedRadius": 5,
+          "changeFrequency": 4,
+          "runtimeCriticality": 4,
+          "verificationSpan": 5,
+          "hiddenStateRisk": 3
+        }
+      },
+      "dispersionReadiness": {
+        "score": 4,
+        "contractsExplicit": true,
+        "localizedTests": true,
+        "isolatedSideEffects": true,
+        "stablePublicSurface": true,
+        "minimalHiddenMutableState": true,
+        "clearResponsibility": true
+      },
+      "pathHints": [
+        "tests",
+        "scripts",
+        "pyproject.toml"
+      ],
+      "executionEntrypoints": [
+        "uv run pytest -q",
+        "uv run python scripts/san_verify.py"
+      ],
+      "verificationEntrypoints": [
+        "uv run pytest -q",
+        "uv run python scripts/san_verify.py"
+      ],
+      "measuredSurface": {
+        "file_count": 27,
+        "total_bytes": 238833,
+        "sample_paths": [
+          "pyproject.toml",
+          "scripts/__init__.py",
+          "scripts/package_prompt01_evidence.py",
+          "scripts/package_prompt02_evidence.py",
+          "scripts/package_prompt03_evidence.py",
+          "scripts/package_prompt05_evidence.py",
+          "scripts/prompt03_support.py",
+          "scripts/run_prompt02_pipeline.py",
+          "scripts/run_prompt03_pipeline.py",
+          "scripts/san_preflight.py"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "san.repo_os",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "sim.market_core",
+      "to": "sim.research_evidence",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "sim.market_core",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "sim.research_evidence",
+      "to": "sim.market_core",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "sim.research_evidence",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.web_app",
+      "to": "jobs.product_doctrine",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.web_app",
+      "to": "jobs.design_ux",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.web_app",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.product_doctrine",
+      "to": "jobs.web_app",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.product_doctrine",
+      "to": "jobs.design_ux",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.product_doctrine",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.design_ux",
+      "to": "jobs.web_app",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.design_ux",
+      "to": "jobs.product_doctrine",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "jobs.design_ux",
+      "to": "shared.tests_and_scripts",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "shared.tests_and_scripts",
+      "to": "sim.market_core",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "shared.tests_and_scripts",
+      "to": "jobs.web_app",
+      "type": "declaredDependency"
+    },
+    {
+      "from": "shared.tests_and_scripts",
+      "to": "san.repo_os",
+      "type": "declaredDependency"
+    }
+  ],
+  "integrity": {
+    "declaredObservedDriftScore": 0.0,
+    "cyclesPresent": false,
+    "lastTopologyReview": "2026-03-30T16:14:00Z",
+    "lastSanlockReview": "2026-03-30T16:14:00Z"
+  }
+}

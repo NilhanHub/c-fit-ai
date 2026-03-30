@@ -1,0 +1,65 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Story Item
+type: object
+additionalProperties: false
+required:
+  - story_id
+  - author_type
+  - template_id
+  - title
+  - created_at
+  - expires_at
+  - moderation_state
+  - visibility_scope
+properties:
+  story_id:
+    type: string
+  author_type:
+    type: string
+    enum: [employer, seeker, campus]
+  author_id:
+    type: string
+  template_id:
+    type: string
+  title:
+    type: string
+  body:
+    type: string
+  media:
+    type: object
+    additionalProperties: false
+    properties:
+      kind:
+        type: string
+        enum: [image, video]
+      poster_url:
+        type: string
+      media_url:
+        type: string
+  linked_job_id:
+    type: string
+  cta:
+    type: object
+    additionalProperties: false
+    properties:
+      label:
+        type: string
+      action:
+        type: string
+        enum: [view_job, quick_apply, save_job, follow_employer, report]
+  created_at:
+    type: string
+    format: date-time
+  expires_at:
+    type: string
+    format: date-time
+  moderation_state:
+    type: string
+    enum: [live, limited, hidden_pending_review, removed]
+  visibility_scope:
+    type: string
+    enum: [public_matched, followers_only, institution_only, private]
+  trust_badges:
+    type: array
+    items:
+      type: string

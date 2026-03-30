@@ -1,0 +1,69 @@
+{
+  "customer_support": [
+    "offer-ameyo-contact-center-ai",
+    "offer-corover-conversational-ai-platform",
+    "offer-engati-conversational-ai",
+    "offer-gupshup-conversational-ai",
+    "offer-haptik-customer-experience",
+    "offer-uniphore-automation-suite",
+    "offer-verloop-support-automation",
+    "offer-yellow-dynamic-automation-platform",
+    "sub-dialog-enterprise",
+    "bench-intercom-fin",
+    "bench-zendesk-ai"
+  ],
+  "document_admin": [
+    "offer-arya-document-ai"
+  ],
+  "education_tutoring": [
+    "offer-embibe-personalized-learning",
+    "sub-mytutor",
+    "sub-dp-education",
+    "bench-duolingo-max"
+  ],
+  "ops_scheduling": [
+    "offer-fasal-farm-advisory"
+  ],
+  "hr_internal": [
+    "offer-infeedo-employee-experience",
+    "offer-leena-ai-agentic-helpdesk",
+    "sub-hsenidbiz"
+  ],
+  "healthcare_screening": [
+    "offer-niramai-screening-ai",
+    "offer-qure-radiology-ai"
+  ],
+  "analytics": [
+    "offer-observeai-contact-center",
+    "offer-zoho-zia"
+  ],
+  "sales_marketing": [
+    "offer-rephrase-personalized-video",
+    "bench-hubspot-ai"
+  ],
+  "collections": [
+    "offer-skit-voice-ai"
+  ],
+  "mental_wellbeing": [
+    "offer-wysa-mental-health"
+  ],
+  "healthcare_access": [
+    "sub-doc990",
+    "sub-echannelling"
+  ],
+  "mobility_logistics": [
+    "sub-pickme-business"
+  ],
+  "classifieds_discovery": [
+    "sub-ikman-services"
+  ],
+  "commerce_enablement": [
+    "sub-kapruka-merchant"
+  ],
+  "connectivity_admin": [
+    "sub-slt-business"
+  ],
+  "productivity": [
+    "bench-notion-ai"
+  ]
+}

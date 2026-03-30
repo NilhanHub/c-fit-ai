@@ -1,0 +1,64 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Household Entity
+type: object
+additionalProperties: false
+required:
+  - household_id
+  - geo_id
+  - claim_type
+  - retrieved_at
+  - evidence_refs
+  - household_size
+  - composition
+  - economics
+  - digital_context
+properties:
+  household_id:
+    type: string
+    minLength: 1
+  geo_id:
+    type: string
+    minLength: 1
+  claim_type:
+    type: string
+    enum: [FACT, INFERENCE, TBD]
+  retrieved_at:
+    type: string
+    format: date-time
+  evidence_refs:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      minLength: 1
+  household_size:
+    type: integer
+    minimum: 1
+  composition:
+    type: object
+    additionalProperties: false
+    required: [adults, children]
+    properties:
+      adults:
+        type: integer
+        minimum: 0
+      children:
+        type: integer
+        minimum: 0
+  economics:
+    type: object
+    additionalProperties: false
+    required: [income_band_lkr_monthly]
+    properties:
+      income_band_lkr_monthly:
+        type: string
+  digital_context:
+    type: object
+    additionalProperties: false
+    required: [smartphone_count_band, payment_readiness]
+    properties:
+      smartphone_count_band:
+        type: string
+      payment_readiness:
+        type: string
+        enum: [cash_only, mixed, digital_ready]

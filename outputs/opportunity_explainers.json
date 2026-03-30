@@ -1,0 +1,142 @@
+{
+  "offer-embibe-personalized-learning": {
+    "offer_name": "Personalized Learning Platform",
+    "vendor_name": "Embibe",
+    "base_score": 60.19,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "b2c_affluent_service_optimizers",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 13,
+    "why": [
+      "education_tutoring aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 65.5 supports the ranking"
+    ]
+  },
+  "offer-corover-conversational-ai-platform": {
+    "offer_name": "Conversational AI Platform",
+    "vendor_name": "CoRover",
+    "base_score": 52.25,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "b2c_affluent_service_optimizers",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 13,
+    "why": [
+      "customer_support aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 59.2 supports the ranking"
+    ]
+  },
+  "offer-engati-conversational-ai": {
+    "offer_name": "Conversational AI Platform",
+    "vendor_name": "Engati",
+    "base_score": 31.19,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "customer_support aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 60.1 supports the ranking"
+    ]
+  },
+  "offer-ameyo-contact-center-ai": {
+    "offer_name": "Contact Center AI",
+    "vendor_name": "Ameyo",
+    "base_score": 29.12,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "customer_support aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 57.7 supports the ranking"
+    ]
+  },
+  "offer-verloop-support-automation": {
+    "offer_name": "Support Automation",
+    "vendor_name": "Verloop.io",
+    "base_score": 28.77,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "customer_support aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 58.0 supports the ranking"
+    ]
+  },
+  "offer-zoho-zia": {
+    "offer_name": "Zia for Business",
+    "vendor_name": "Zoho",
+    "base_score": 28.69,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "analytics aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 63.2 supports the ranking"
+    ]
+  },
+  "offer-gupshup-conversational-ai": {
+    "offer_name": "Conversation Cloud",
+    "vendor_name": "Gupshup",
+    "base_score": 28.61,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "customer_support aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 60.8 supports the ranking"
+    ]
+  },
+  "offer-fasal-farm-advisory": {
+    "offer_name": "Fasal Precision Farming AI",
+    "vendor_name": "Fasal",
+    "base_score": 28.57,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 11,
+    "why": [
+      "ops_scheduling aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 53.0 supports the ranking"
+    ]
+  },
+  "offer-rephrase-personalized-video": {
+    "offer_name": "Personalized Video AI",
+    "vendor_name": "Rephrase.ai",
+    "base_score": 28.1,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "",
+    "top_b2b_segment": "b2b_knowledge_and_admin_smes",
+    "top10_scenario_count": 10,
+    "why": [
+      "sales_marketing aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 57.1 supports the ranking"
+    ]
+  },
+  "offer-wysa-mental-health": {
+    "offer_name": "AI Mental Health Coach",
+    "vendor_name": "Wysa",
+    "base_score": 27.51,
+    "dominant_market": "mixed",
+    "top_b2c_segment": "b2c_affluent_service_optimizers",
+    "top_b2b_segment": "",
+    "top10_scenario_count": 11,
+    "why": [
+      "mental_wellbeing aligns with a high-need Colombo segment",
+      "mixed demand currently drives the score",
+      "quality score 63.6 supports the ranking"
+    ]
+  }
+}

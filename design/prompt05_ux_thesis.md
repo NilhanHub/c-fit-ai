@@ -1,0 +1,3 @@
+# Prompt #05 UX Thesis
+
+Colombo Jobs Pulse should feel like a jobs operating system, not a social feed and not a dashboard. The correct blend is calm but alive, urgent but not chaotic, youthful without cringing, trustworthy without corporate stiffness, and dense without becoming heavy. LinkedIn feels networked and slow, job boards feel inventory-first, TikTok feels entertainment-first, and WhatsApp Status feels socially ambient; Jobs Pulse should feel like useful movement: a place where jobs, deadlines, salary disclosures, trust shifts, recruiter activity, and walk-ins visibly move between checks.

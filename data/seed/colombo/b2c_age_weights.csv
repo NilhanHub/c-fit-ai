@@ -1,0 +1,8 @@
+age_band,weight,evidence_refs,notes
+0-14,0.217,dcs-census-2012-colombo-age,Aggregated from district age counts
+15-24,0.159,dcs-census-2012-colombo-age,Aggregated from district age counts
+25-34,0.163,dcs-census-2012-colombo-age,Aggregated from district age counts
+35-44,0.145,dcs-census-2012-colombo-age,Aggregated from district age counts
+45-54,0.127,dcs-census-2012-colombo-age,Aggregated from district age counts
+55-64,0.101,dcs-census-2012-colombo-age,Aggregated from district age counts
+65+,0.088,dcs-census-2012-colombo-age,Aggregated from district age counts

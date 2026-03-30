@@ -1,0 +1,262 @@
+{
+  "repo_id": "c_fit_ai",
+  "repo_name": "C_fit_AI",
+  "repo_shape": "dual-node",
+  "san_blueprint": {
+    "edition": "3.7",
+    "master_prompt_path": "san/references/san-repo-os-master-prompt-v3.7.md",
+    "blueprint_path": "san/references/san-repo-os-blueprint-v3.7.md",
+    "criteria_path": "san/references/san-raaos-criteria-v2-fresh.md",
+    "topology_template_path": "san/references/san-topology-graph-template-v3.7.json"
+  },
+  "active_modes": [
+    "MID_BUILD_ALIGNMENT",
+    "LEGACY_RETROFIT",
+    "MAINTENANCE"
+  ],
+  "canonical_surfaces": {
+    "doctrine": "AGENTS.md",
+    "control_plane": "san/control_plane.json",
+    "durable_state": "san/durable_state.json",
+    "runtime_manifest": "san/runtime_manifest.json",
+    "artifact_classes": "san/artifact_classes.json",
+    "topology_graph": "san/topology/topology.graph.json",
+    "sanlock_scorecard": "san/sanlock_scorecard.json"
+  },
+  "authority_rules": [
+    "AGENTS.md is the doctrine entrypoint for cold-start agents.",
+    "Only SAN JSON manifests are write-authoritative for repo-OS state.",
+    "README.md, AGENT_GUIDE.md, STATUS.md, DECISIONS.md, and task_rubric.md are generated mirrors.",
+    "Prompt-era artifacts remain historical evidence unless explicitly reclassified.",
+    "Both product lines remain live bounded nodes under one control plane."
+  ],
+  "products": [
+    {
+      "id": "simulator",
+      "name": "Score Leads Market Simulator",
+      "summary": "Evidence-grounded Colombo B2C + B2B AI offer screening simulator.",
+      "node_ids": [
+        "sim.market_core",
+        "sim.research_evidence"
+      ]
+    },
+    {
+      "id": "jobs_pulse",
+      "name": "Colombo Jobs Pulse",
+      "summary": "Jobs operating system web product for freshness, trust, and repeat checking.",
+      "node_ids": [
+        "jobs.web_app",
+        "jobs.product_doctrine",
+        "jobs.design_ux"
+      ]
+    }
+  ],
+  "active_work": {
+    "headline": "Retrofit the repository into a dual-node SAN Repo OS without deleting either product line.",
+    "current_status": "active",
+    "bounded_focus": "repo operating system alignment",
+    "success_criteria": [
+      "One canonical control plane exists.",
+      "Both product lines remain testable and cold-start legible.",
+      "Topology truth is machine-readable and current.",
+      "Repo mirrors are generated from canonical SAN manifests.",
+      "Versioned change control starts with an intentional baseline commit."
+    ]
+  },
+  "conditional_doctrines": {
+    "outward_sharing_active": false,
+    "purpose_scoped_execution_contexts_active": true,
+    "stateful_rehydration_contract_active": false
+  },
+  "change_control": {
+    "versioned_surface": "git",
+    "authoritative_branch": "main",
+    "baseline_commit_policy": "The first commit on main containing the SAN control-plane files is the initial SAN-aligned checkpoint."
+  },
+  "chosen_weapons": [
+    {
+      "weapon": "using-superpowers",
+      "why": "Required gateway discipline before generic execution."
+    },
+    {
+      "weapon": "brainstorming",
+      "why": "Used to lock the repo shape and authority model before mutation."
+    },
+    {
+      "weapon": "systematic-debugging",
+      "why": "Required for any failures exposed by the new SAN verification layer."
+    },
+    {
+      "weapon": "test-driven-development",
+      "why": "The SAN harness is being added behind failing tests first."
+    },
+    {
+      "weapon": "verification-before-completion",
+      "why": "All completion claims must be backed by fresh repo and web verification."
+    }
+  ],
+  "surface_classifications": [
+    {
+      "path": "AGENTS.md",
+      "authority": "canonical",
+      "artifact_class": "doctrine",
+      "notes": "Root doctrine entrypoint."
+    },
+    {
+      "path": "san/control_plane.json",
+      "authority": "canonical",
+      "artifact_class": "doctrine",
+      "notes": "Write-authoritative control-plane source truth."
+    },
+    {
+      "path": "san/durable_state.json",
+      "authority": "canonical",
+      "artifact_class": "durable_state",
+      "notes": "Write-authoritative durable-state source truth."
+    },
+    {
+      "path": "san/runtime_manifest.json",
+      "authority": "canonical",
+      "artifact_class": "runtime_manifest",
+      "notes": "Execution and verification truth."
+    },
+    {
+      "path": "san/artifact_classes.json",
+      "authority": "canonical",
+      "artifact_class": "doctrine",
+      "notes": "Artifact exposure and class policy."
+    },
+    {
+      "path": "san/topology/topology.graph.json",
+      "authority": "canonical",
+      "artifact_class": "topology_truth",
+      "notes": "Machine-readable node graph."
+    },
+    {
+      "path": "san/sanlock_scorecard.json",
+      "authority": "canonical",
+      "artifact_class": "verification_evidence",
+      "notes": "Current SAN scorecard."
+    },
+    {
+      "path": "san/references/**",
+      "authority": "local_overlay",
+      "artifact_class": "doctrine",
+      "notes": "Vendored SAN reference pack for cold-start bootability."
+    },
+    {
+      "path": "san/references/import_manifest.json",
+      "authority": "generated",
+      "artifact_class": "verification_evidence",
+      "notes": "Reference import provenance and hashes."
+    },
+    {
+      "path": "san/control-plane.md",
+      "authority": "mirrored",
+      "artifact_class": "outward_narrative",
+      "notes": "Human mirror of the control plane."
+    },
+    {
+      "path": "san/state/durable-state.md",
+      "authority": "mirrored",
+      "artifact_class": "outward_narrative",
+      "notes": "Human mirror of durable state."
+    },
+    {
+      "path": "san/state/authority-map.md",
+      "authority": "mirrored",
+      "artifact_class": "outward_narrative",
+      "notes": "Surface classification mirror."
+    },
+    {
+      "path": "san/state/export-boundary.md",
+      "authority": "mirrored",
+      "artifact_class": "outward_narrative",
+      "notes": "Artifact exposure mirror."
+    },
+    {
+      "path": "san/state/recurring-failures.md",
+      "authority": "mirrored",
+      "artifact_class": "outward_narrative",
+      "notes": "Recurring-failure memory mirror."
+    },
+    {
+      "path": "san/topology/node-index.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Human-readable topology view."
+    },
+    {
+      "path": "san/preflight.md",
+      "authority": "generated",
+      "artifact_class": "verification_evidence",
+      "notes": "Latest SAN preflight findings."
+    },
+    {
+      "path": "san/sanlock.md",
+      "authority": "generated",
+      "artifact_class": "verification_evidence",
+      "notes": "Latest SANLOCK findings."
+    },
+    {
+      "path": "README.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Repo overview mirror."
+    },
+    {
+      "path": "AGENT_GUIDE.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Cold-start operating guide mirror."
+    },
+    {
+      "path": "STATUS.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Current status mirror."
+    },
+    {
+      "path": "DECISIONS.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Decision log mirror."
+    },
+    {
+      "path": "task_rubric.md",
+      "authority": "generated",
+      "artifact_class": "outward_narrative",
+      "notes": "Task rubric mirror."
+    },
+    {
+      "path": "PROMPT02_*",
+      "authority": "historical",
+      "artifact_class": "historical_prompt_artifact",
+      "notes": "Historical prompt-era artifacts."
+    },
+    {
+      "path": "PROMPT03_*",
+      "authority": "historical",
+      "artifact_class": "historical_prompt_artifact",
+      "notes": "Historical prompt-era artifacts."
+    },
+    {
+      "path": "PROMPT05_*",
+      "authority": "historical",
+      "artifact_class": "historical_prompt_artifact",
+      "notes": "Historical prompt-era artifacts."
+    },
+    {
+      "path": "HANDOFF/**",
+      "authority": "historical",
+      "artifact_class": "historical_prompt_artifact",
+      "notes": "Historical handoff surfaces retained for evidence."
+    },
+    {
+      "path": "evidence/prompt*.json",
+      "authority": "historical",
+      "artifact_class": "historical_prompt_artifact",
+      "notes": "Prompt-era evidence manifests remain retained, not canonical."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "classes": [
+    {
+      "id": "doctrine",
+      "description": "Instruction and governance surfaces that define how agents should operate in this repo.",
+      "default_exposure": "internal_authoritative"
+    },
+    {
+      "id": "durable_state",
+      "description": "Repo-local memory used for resuming work across stateless sessions.",
+      "default_exposure": "internal_authoritative"
+    },
+    {
+      "id": "runtime_manifest",
+      "description": "Canonical execution and verification entrypoints.",
+      "default_exposure": "internal_authoritative"
+    },
+    {
+      "id": "topology_truth",
+      "description": "Machine-readable bounded-node graph and node-budget data.",
+      "default_exposure": "internal_authoritative"
+    },
+    {
+      "id": "verification_evidence",
+      "description": "Proof artifacts, scorecards, preflight checks, and runtime verification outputs.",
+      "default_exposure": "internal_private"
+    },
+    {
+      "id": "product_truth",
+      "description": "Product-facing source truth for either the simulator or Jobs Pulse node.",
+      "default_exposure": "internal_shareable"
+    },
+    {
+      "id": "outward_narrative",
+      "description": "Human-readable mirrors or summaries that explain current repo state.",
+      "default_exposure": "shareable_after_review"
+    },
+    {
+      "id": "historical_prompt_artifact",
+      "description": "Prompt-era artifacts retained for auditability and historical context.",
+      "default_exposure": "internal_private"
+    }
+  ],
+  "export_boundary": {
+    "outward_sharing_active": false,
+    "private_by_default_classes": [
+      "doctrine",
+      "durable_state",
+      "runtime_manifest",
+      "topology_truth",
+      "verification_evidence",
+      "historical_prompt_artifact"
+    ],
+    "review_required_for_export": [
+      "outward_narrative",
+      "product_truth"
+    ],
+    "notes": [
+      "Outward sharing is currently inactive.",
+      "Prompt-era evidence and internal doctrine are not automatically outward-safe."
+    ]
+  }
+}

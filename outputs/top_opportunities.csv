@@ -1,0 +1,11 @@
+scenario_id,offer_id,vendor_name,offer_name,problem_domain,market_side,offer_kind,final_score,b2c_score,b2b_score,dominant_market,top_b2c_segment,top_b2b_segment,quality_score
+mixed_market_base,offer-embibe-personalized-learning,Embibe,Personalized Learning Platform,education_tutoring,both,candidate,60.19,61.06,59.47,mixed,b2c_affluent_service_optimizers,b2b_knowledge_and_admin_smes,65.5
+mixed_market_base,offer-corover-conversational-ai-platform,CoRover,Conversational AI Platform,customer_support,both,candidate,52.25,52.74,51.85,mixed,b2c_affluent_service_optimizers,b2b_knowledge_and_admin_smes,59.2
+mixed_market_base,offer-engati-conversational-ai,Engati,Conversational AI Platform,customer_support,b2b,candidate,31.19,0.0,56.71,mixed,,b2b_knowledge_and_admin_smes,60.1
+mixed_market_base,offer-ameyo-contact-center-ai,Ameyo,Contact Center AI,customer_support,b2b,candidate,29.12,0.0,52.94,mixed,,b2b_knowledge_and_admin_smes,57.7
+mixed_market_base,offer-verloop-support-automation,Verloop.io,Support Automation,customer_support,b2b,candidate,28.77,0.0,52.31,mixed,,b2b_knowledge_and_admin_smes,58.0
+mixed_market_base,offer-zoho-zia,Zoho,Zia for Business,analytics,b2b,candidate,28.69,0.0,52.17,mixed,,b2b_knowledge_and_admin_smes,63.2
+mixed_market_base,offer-gupshup-conversational-ai,Gupshup,Conversation Cloud,customer_support,b2b,candidate,28.61,0.0,52.01,mixed,,b2b_knowledge_and_admin_smes,60.8
+mixed_market_base,offer-fasal-farm-advisory,Fasal,Fasal Precision Farming AI,ops_scheduling,b2b,candidate,28.57,0.0,51.95,mixed,,b2b_knowledge_and_admin_smes,53.0
+mixed_market_base,offer-rephrase-personalized-video,Rephrase.ai,Personalized Video AI,sales_marketing,b2b,candidate,28.1,0.0,51.09,mixed,,b2b_knowledge_and_admin_smes,57.1
+mixed_market_base,offer-wysa-mental-health,Wysa,AI Mental Health Coach,mental_wellbeing,b2c,candidate,27.51,61.13,0.0,mixed,b2c_affluent_service_optimizers,,63.6
