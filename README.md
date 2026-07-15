@@ -1,5 +1,8 @@
 # C_fit_AI Dual-Node Colombo Workspace
 
+> [!TIP]
+> Read [ENGINEERING_OVERVIEW.md](ENGINEERING_OVERVIEW.md) for a professional tour of the dual-node architecture, SAN repository OS, trust model, and verification evidence.
+
 This repository is a machine-readable dual-node workspace for Colombo product work. It keeps both the Colombo AI market simulator and the Colombo Jobs Pulse web product inside one SAN Repo OS so cold-start agents can discover authority, recover state, verify reality, and leave diffable progress.
 
 ## Live Product Lines
